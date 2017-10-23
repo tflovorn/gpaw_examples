@@ -1,0 +1,159 @@
+
+  ___ ___ ___ _ _ _  
+ |   |   |_  | | | | 
+ | | | | | . | | | | 
+ |__ |  _|___|_____|  1.3.0
+ |___|_|             
+
+User:   gpaw@gpaw-vm
+Date:   Sun Oct 22 21:39:01 2017
+Arch:   x86_64
+Pid:    23502
+Python: 3.5.2
+gpaw:   /home/gpaw/.local/lib/python3.5/site-packages/gpaw
+_gpaw:  /home/gpaw/.local/bin/gpaw-python
+ase:    /home/gpaw/.local/lib/python3.5/site-packages/ase (version 3.15.0)
+numpy:  /home/gpaw/.local/lib/python3.5/site-packages/numpy (version 1.13.3)
+scipy:  /home/gpaw/.local/lib/python3.5/site-packages/scipy (version 0.19.1)
+units:  Angstrom and eV
+cores:  4
+
+Reading from graphene_gs.gpw
+Read dipole, energy, free_energy
+Reading input parameters:
+  h: 0.2
+  kpts: {gamma: True,
+         size: [25 25  1]}
+  mode: {ecut: 600.0,
+         name: pw}
+  occupations: {name: fermi-dirac,
+                width: 0.01}
+  random: True
+  symmetry: off
+  xc: PBE
+
+Initialize ...
+
+C-setup:
+  name: Carbon
+  id: 4aa54d4b901d75f77cc0ea3eec22967b
+  Z: 6
+  valence: 4
+  core: 2
+  charge: 0.0
+  file: /home/gpaw/gpaw-setups-0.9.20000/C.PBE.gz
+  cutoffs: 0.64(comp), 1.14(filt), 1.14(core), lmax=2
+  valence states:
+                energy  radius
+    2s(2.00)   -13.751   0.635
+    2p(2.00)    -5.284   0.635
+    *s          13.461   0.635
+    *p          21.927   0.635
+    *d           0.000   0.635
+
+  Using partial waves for C as LCAO basis
+
+Reference energy: -2055.256231
+
+Spin-paired calculation
+
+Occupation numbers:
+  Fermi-Dirac: width=0.0100 eV
+
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+Symmetries present (total): 1
+
+  ( 1  0  0)
+  ( 0  1  0)
+  ( 0  0  1)
+
+625 k-points: 25 x 25 x 1 Monkhorst-Pack grid
+625 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:    -0.48000000   -0.48000000    0.00000000          1/625
+   1:    -0.48000000   -0.44000000    0.00000000          1/625
+   2:    -0.48000000   -0.40000000    0.00000000          1/625
+   3:    -0.48000000   -0.36000000    0.00000000          1/625
+   4:    -0.48000000   -0.32000000    0.00000000          1/625
+   5:    -0.48000000   -0.28000000    0.00000000          1/625
+   6:    -0.48000000   -0.24000000    0.00000000          1/625
+   7:    -0.48000000   -0.20000000    0.00000000          1/625
+   8:    -0.48000000   -0.16000000    0.00000000          1/625
+   9:    -0.48000000   -0.12000000    0.00000000          1/625
+          ...
+ 624:     0.48000000    0.48000000    0.00000000          1/625
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 600.000 eV
+  Number of coefficients (min, max): 3435, 3563
+  Using FFTW library
+  Eigensolver: None  MatrixOperator buffer_size: default value or 
+                              see value of nblock in input file
+Diagonalizer layout: Serial LAPACKOrthonormalizer layout: Serial LAPACK 
+
+Davidson(niter=1, smin=None, normalize=True) 
+
+Densities:
+  Coarse grid: 12*12*100 grid
+  Fine grid: 24*24*200 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 24*24*200 grid
+  Using the PBE Exchange-Correlation functional
+ 
+
+Memory estimate:
+  Process memory now: 337.20 MiB
+  Calculator: 143.07 MiB
+    Density: 6.32 MiB
+      Arrays: 2.86 MiB
+      Localized functions: 2.37 MiB
+      Mixer: 1.10 MiB
+    Hamiltonian: 1.92 MiB
+      Arrays: 1.87 MiB
+      XC: 0.00 MiB
+      Poisson: 0.00 MiB
+      vbar: 0.05 MiB
+    Wavefunctions: 134.83 MiB
+      Arrays psit_nG: 67.85 MiB
+      Eigensolver: 0.72 MiB
+      Projections: 0.50 MiB
+      Projectors: 58.52 MiB
+      Overlap op: 0.44 MiB
+      PW-descriptor: 6.82 MiB
+
+Total number of cores used: 4
+Parallelization over k-points: 4
+
+Number of atoms: 2
+Number of atomic orbitals: 8
+Number of bands in calculation: 8
+Bands to converge: occupied states only
+Number of valence electrons: 8
+
+... initialized
+
+Timing:           incl.     excl.
+----------------------------------------
+PWDescriptor:     0.161     0.161   4.3% |-|
+Redistribute:     0.001     0.001   0.0% |
+Set symmetry:     0.000     0.000   0.0% |
+Other:            3.564     3.564  95.6% |-------------------------------------|
+----------------------------------------
+Total:                      3.726 100.0%
+
+Memory usage: 337.20 MiB
+Date: Sun Oct 22 21:39:05 2017
