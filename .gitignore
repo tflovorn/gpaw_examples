@@ -1,4 +1,5 @@
 *.swp
 *.gpw
+*.xsf
 *.traj
 graphene_stm_*.png

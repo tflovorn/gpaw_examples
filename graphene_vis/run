@@ -1,0 +1,4 @@
+#!/bin/bash
+mpiexec gpaw-python graphene_vis.py
+xcrysden --xsf graphene_pseudo_density.xsf
+xcrysden --xsf graphene_ae_density.xsf
